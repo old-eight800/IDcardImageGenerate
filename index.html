@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href=".//index.css" />
+  <script type="text/javascript" src="./index.js"></script>
+  <script type="text/javascript" src="./cityData.js"></script>
+  <script type="text/javascript" src="./provinceData.js"></script>
+  <script type="text/javascript" src="./nationData.js"></script>
+  <title>身份证</title>
+</head>
+
+<body>
+  <div class="container fontStyle">
+    <div class="front">
+      <div id="organization"></div>
+      <div id="expiryDates"></div>
+    </div>
+    <div class="back" id="back">
+      <div id="name"></div>
+      <div id="gender"></div>
+      <div id="nation"></div>
+      <div id="year"></div>
+      <div id="month"></div>
+      <div id="day"></div>
+      <div id="address"></div>
+      <div id="idcard"></div>
+    </div>
+  </div>
+  <div class="container">
+    <h5>自定义信息输入区域</h5>
+    <p>姓名: <input type="text" id="nameInput">
+    身份证号: <input type="text" id="idcardInput">
+    住址: <input type="text" id="addressInput">
+   </p>
+    <p>
+    民族: <input type="text" id="nationInput">
+    签发机关: <input type="text" id="organizationInput">
+    有效期限: <input type="text" id="expiryDatesInput"></p>
+    <button class="button" onclick="refresh()" type="button">生成</button>
+  </div>
+  <div class="hidden-male">
+  </div>
+  <div class="hidden-woman">
+  </div>
+</body>
+<script>
+  refresh()
+</script>
+
+</html>
